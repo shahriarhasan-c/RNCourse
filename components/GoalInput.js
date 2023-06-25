@@ -47,9 +47,13 @@ const styles = StyleSheet.create({
   },
   textInput: {
     borderWidth: 1,
+    borderColor:'#e4d0ff',
+    backgroundColor:'#e4d0ff',
+    color:'#120438',
+    borderRadius:6,
     borderColor: '#cccccc',
     width: '100%',
-    padding: 8,
+    padding: 16,
   },
   buttonContainer: {
     flexDirection: 'row',
