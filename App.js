@@ -32,16 +32,17 @@ export default function App() {
   };
 
   function deleteGoalHandler(id) {
-    console.log(id);
     setCourseGoals((currentCourseGoals) => {
       return currentCourseGoals.filter((goals) => goals.id !== id);
     })
   }
 
   return (
+    <>
+    <StatusBar style='light'/>
     <View style={styles.appContainer}>
       <Button title='Add New Goal'
-       color="#5e0acc"
+       color="#a065ec"
        onPress={startAddGoalHandler}
        />
      <GoalInput visible={modalIsVisible}
@@ -63,6 +64,7 @@ export default function App() {
         />
       </View>
     </View>
+    </>
   );
 }
 
@@ -71,6 +73,7 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: 50,
     paddingHorizontal: 16,
+    backgroundColor:'#1e085a'
   },
 
   goalsContainer: {

@@ -16,7 +16,7 @@ function GoalInput(props) {
   return (
     <Modal visible={props.visible} animationType='slide'>
       <View style={styles.inputContainer}>
-        <Image style={styles.image} source={require('../assets/images/pin.jpg')}/>
+        <Image style={styles.image} source={require('../assets/images/pin.png')}/>
         <TextInput style={styles.textInput} placeholder='Your course goal'
           value={enteredGoalText}
           onChangeText={goalInputHandler}
@@ -47,9 +47,13 @@ const styles = StyleSheet.create({
   },
   textInput: {
     borderWidth: 1,
+    borderColor:'#e4d0ff',
+    backgroundColor:'#e4d0ff',
+    color:'#120438',
+    borderRadius:6,
     borderColor: '#cccccc',
     width: '100%',
-    padding: 8,
+    padding: 16,
   },
   buttonContainer: {
     flexDirection: 'row',
